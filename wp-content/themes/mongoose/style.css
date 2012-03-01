@@ -1,0 +1,64 @@
+/*
+Theme Name:     Mongoose
+Theme URI:      http://mongooseportal.com/
+Description:    Child theme for the Twenty Eleven theme for Mongoose Portal 
+Author:         Joe Morel
+Author URI:     http://slowcookedbacon.com
+Template:       twentyeleven
+Version:        0.1.0
+*/
+
+@import url("../twentyeleven/style.css");
+
+#branding {
+	background: none repeat scroll 0 0 #E4EAEF;
+	border-top: none;
+}
+
+#access {
+	background: none repeat scroll 0 0 #2371A4;
+}
+
+#branding .only-search #s {
+	background-color: #EEEEEE;
+	border-color: #999999;
+}
+
+#branding .only-search #s:focus {
+	background-color: #FFFFFF;
+}
+
+#homepage {
+	padding: 0;
+}
+
+.entry-content-homepage {
+	margin: 0 auto;
+	width: 83%;
+}
+
+.homepage-item {
+	float: left;
+	margin: 0 30px 30px 0;
+	width: 385px;
+}
+
+.home-icon {
+	float: left;
+	padding-top: 5px;
+}
+
+.homepage-item-text {
+	margin-left: 20px;
+	float: left;
+	width: 75%;
+}
+
+.homepage-item-header {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#main {
+	padding: 3em 0 0;
+}
