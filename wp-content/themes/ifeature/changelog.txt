@@ -2,6 +2,27 @@ iFeature Changelog
 
 ****************************
 
+Version 4.0.8 (03-08-12)
+-Removed PressTrends function.
+
+Version 4.0.7 (03-07-12)
+-Fixed typo in theme options panel.
+-Fix for page titles.
+-Updated Google Font Library call to be SSL friendly.
+-Added browser specific HTML classes for IE CSS.
+-Updated some theme copy. 
+-CSS tweak for HTML tables to fix calendar widget bug.
+-Added next/previous image paginiation for attachments. 
+
+Version 4.0.6 (03-01-12)
+-Additional margin fix for HTML tables.
+-Updated Foundation CSS.
+-Adjusted doctype. 
+-Removed legacy icon margin option.
+-CSS tweaks.
+-Removed HTML comment before doctype call, fixes IE quirks mode issue. 
+-Adjusted image upload preview style.
+
 Version 4.0.5 (02-23-12)
 -Fix for HTML tables.
 -Added align:none option for featured images.

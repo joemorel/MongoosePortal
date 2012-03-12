@@ -47,6 +47,13 @@ background: #3279BB;
 color:#fff;
 }
 
+#image_pagination {border: 1px solid #DDD; margin-bottom: 15px; background: #FFF; display: block;}
+
+.image_wrap {padding: 10px 15px 5px 15px; height: 105px;}
+
+.previous_image {float: left;}
+
+.next_image {float: right;}
 
 #sidebar {right: -2px;}
 
@@ -171,7 +178,7 @@ header {margin-top: 15px;}
 	overflow: hidden;
 }
 
-#magnify {float:left;position:absolute;margin: 5px 0 0 5px;}
+#magnify {float:left;position:absolute;margin: 2px 0 0 5px;}
 
 #magnify {margin: 0 0 0 5px\0/IE8+9; /* IE8+9  */}
 
@@ -281,11 +288,12 @@ dd {margin-bottom: 15px; margin-left: 26px; }
 
 ul, ol { margin: 0 0 10px 0; }
 
-th {padding-right: 20px; padding-bottom: 10px;}
+th {padding-right: 10px; padding-bottom: 10px;}
 
 td {border-top: 1px solid #DDD;padding: 6px 10px 6px 0;}
 
 table {border-bottom: 1px solid #DDD;}
+table thead tr th, table tfoot tr td {padding: 0px;}
 
 pre {margin-left: 20px;}
 
@@ -595,7 +603,13 @@ ol.commentlist li.thread-alt { }
 ol.commentlist li.thread-even { }
 ol.commentlist li.thread-odd { }
 
-form { }
+form label {
+	display: block;
+	font-size: 13px;
+	line-height: 18px;
+	cursor: pointer;
+	margin-bottom: 9px;
+}
 
 textarea {margin-top: 10px;padding-bottom: 10px;width: 90%;}
 

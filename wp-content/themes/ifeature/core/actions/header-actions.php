@@ -56,7 +56,12 @@ function synapse_font() {
 * @since 1.0
 */
 function synapse_html_attributes() { ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes('xhtml'); ?>>
 <head profile="http://gmpg.org/xfn/11"> <?php 
 }
@@ -66,8 +71,7 @@ function synapse_html_attributes() { ?>
 *
 * @since 1.0
 */
-function synapse_meta_tags() { ?>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <?php
+function synapse_meta_tags() { 
 	global $themeslug, $options, $post; //Call global variables
 	if(!$post) return; // in case of 404 page or something
 	$title = get_post_meta($post->ID, 'seo_title' , true);
@@ -192,7 +196,7 @@ function synapse_link_rel() {
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<link href='http://fonts.googleapis.com/css?family=<?php echo $font ; ?>' rel='stylesheet' type='text/css' /> <?php
+<link href='//fonts.googleapis.com/css?family=<?php echo $font ; ?>' rel='stylesheet' type='text/css' /> <?php
 }
 
 
